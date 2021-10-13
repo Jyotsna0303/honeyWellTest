@@ -82,6 +82,8 @@ public class MavenWrapperDownloader {
                         "- ERROR creating output directory '" + outputFile.getParentFile().getAbsolutePath() + "'");
             }
         }
+        //comment added 
+        System.out.println("- Downloading to: " + outputFile.getAbsolutePath());
         System.out.println("- Downloading to: " + outputFile.getAbsolutePath());
         try {
             downloadFileFromURL(url, outputFile);
